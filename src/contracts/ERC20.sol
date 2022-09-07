@@ -194,5 +194,55 @@ contract CryptosICO is ERC20{
       }
    }
 
+   event Invest(address investor,uint value, uint tokens);
+
+   // main function of the Ico - invest
+   // call- when somebody sends eth to the contract
+   // and recieves cryptos in return
+    
+    function invest() payable public returns(bool){
+         // first check that the ico is in the running state
+      icoState= getCurrentState();
+      require(icoState == State.running);
+      require(msg.value >= minInvestment && msg.value <= maxInvestment);
+       
+       // add the value into raised amount
+      raisedAmount += msg.value;
+      
+      require(raisedAmount <= hardcap);
+
+
+      // calculate the number of tokens user will get for the ether he has just sent
+     
+     uint tokens = msg.value/ tokenPrice;
+
+     // now these tokens will be added to invester balance 
+     // and subtracted from the founder balance
+
+     balances[msg.sender] += tokens;
+     balances[founder] -= tokens;
+   
+
+   // now transfer to the deposit address the amount of wei sent to the contract
+   deposit.transfer(msg.value);
+
+    emit Invest(msg.sender,msg.value,tokens);
+    
+
+  return true;
+    }
+
+    // the contract will accept eth that has sent to its address
+    // if there is payable function called recieve
+
+receive() payable external{
+    // this function will automatically call when someone sends
+    // ether to contact
+    invest();
+}
+
+
+
+
 }
 
