@@ -185,7 +185,7 @@
       "type": "function"
     }
   ],
-  "metadata": "{\"compiler\":{\"version\":\"0.8.16+commit.07a7930e\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"tokenOwner\",\"type\":\"address\"},{\"indexed\":true,\"internalType\":\"address\",\"name\":\"spender\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"tokens\",\"type\":\"uint256\"}],\"name\":\"Approval\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"from\",\"type\":\"address\"},{\"indexed\":true,\"internalType\":\"address\",\"name\":\"to\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"token\",\"type\":\"uint256\"}],\"name\":\"Transfer\",\"type\":\"event\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"tokenOwner\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"spender\",\"type\":\"address\"}],\"name\":\"allowance\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"remaining\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"spender\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"tokens\",\"type\":\"uint256\"}],\"name\":\"approve\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"success\",\"type\":\"bool\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"tokenOwner\",\"type\":\"address\"}],\"name\":\"balanceOf\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"balance\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"totalSupply\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"from\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"to\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"tokens\",\"type\":\"uint256\"}],\"name\":\"tranferFrom\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"success\",\"type\":\"bool\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"to\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"tokens\",\"type\":\"uint256\"}],\"name\":\"transfer\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"success\",\"type\":\"bool\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/src/contracts/ERC20.sol\":\"ERC20Interface\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/src/contracts/ERC20.sol\":{\"keccak256\":\"0xa04f991cae2b59f9d10d0efdf764d17f9c295636fef1b3c711e182f0c23282b4\",\"license\":\"GPL-3.0\",\"urls\":[\"bzz-raw://3bea283d06c81c3a04354d05b978984a11d74915013a62747b76aabf62effd62\",\"dweb:/ipfs/QmSGwMrJjWc9nngufk2ymjehanyxTtzM6M3QhrvdapfYJB\"]}},\"version\":1}",
+  "metadata": "{\"compiler\":{\"version\":\"0.8.16+commit.07a7930e\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"tokenOwner\",\"type\":\"address\"},{\"indexed\":true,\"internalType\":\"address\",\"name\":\"spender\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"tokens\",\"type\":\"uint256\"}],\"name\":\"Approval\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"from\",\"type\":\"address\"},{\"indexed\":true,\"internalType\":\"address\",\"name\":\"to\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"token\",\"type\":\"uint256\"}],\"name\":\"Transfer\",\"type\":\"event\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"tokenOwner\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"spender\",\"type\":\"address\"}],\"name\":\"allowance\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"remaining\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"spender\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"tokens\",\"type\":\"uint256\"}],\"name\":\"approve\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"success\",\"type\":\"bool\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"tokenOwner\",\"type\":\"address\"}],\"name\":\"balanceOf\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"balance\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"totalSupply\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"from\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"to\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"tokens\",\"type\":\"uint256\"}],\"name\":\"tranferFrom\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"success\",\"type\":\"bool\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"to\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"tokens\",\"type\":\"uint256\"}],\"name\":\"transfer\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"success\",\"type\":\"bool\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/src/contracts/ERC20.sol\":\"ERC20Interface\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/src/contracts/ERC20.sol\":{\"keccak256\":\"0x403b120dee7228132b165ccd85a2ed410d47ee59c6eb67c2eb60ccaf1889b5a6\",\"license\":\"GPL-3.0\",\"urls\":[\"bzz-raw://f16e8ece841c3a79c65fd009f45aaf448e603297f9730070a6914e22de7491d0\",\"dweb:/ipfs/QmZHBYz6vgpGezxo3Pg36JhCfQck9uBboeNUaJ3Wr2AoTH\"]}},\"version\":1}",
   "bytecode": "0x",
   "deployedBytecode": "0x",
   "immutableReferences": {},
@@ -193,13 +193,13 @@
   "deployedGeneratedSources": [],
   "sourceMap": "",
   "deployedSourceMap": "",
-  "source": "// SPDX-License-Identifier: GPL-3.0\npragma solidity >=0.7.0 <0.9.0;\ninterface ERC20Interface{\n    function totalSupply() external view returns(uint);\n    function balanceOf(address tokenOwner) external view returns (uint balance);\n    function transfer(address to,uint tokens) external returns(bool success);\n\n\n     function allowance(address tokenOwner,address spender) external view returns(uint remaining);\n     function approve(address spender,uint tokens) external returns (bool success);\n     function tranferFrom(address from,address to,uint tokens) external returns (bool success);\n\n\n    event Transfer(address indexed from, address indexed to, uint token);\n    event Approval(address indexed tokenOwner,address indexed spender,uint tokens);\n\n\n\n}\n\n\ncontract ERC20 is ERC20Interface{\n    \n    string public name = \"Cryptos\";\n    string public symbol= \"CRPT\";\n    uint public decimals = 0; //18\n    // total supply - represent the toral number of tokens\n    uint public override totalSupply; // a getter function will be created bcz the variable is public\n\n    address public founder;\n    // map to store each address and no of tokens with respect to it\n    mapping(address=>uint) public balances;\n   \n\n   constructor(){\n    totalSupply= 1000000;\n    founder = msg.sender;\n    balances[founder] = totalSupply;\n   }\n\n\n// first - this mapping includes the accounts approved tp withdraw from a \n// account together with the withdrawal sum allowed for wach of them\n\n// first mapping is the key - the address of the token holder\n// second map inside it - is representing the addresses that are allowed to transfer\n\n   mapping(address=>mapping(address=>uint)) public allowed;\n\n\n      function balanceOf(address tokenOwner) public view override returns (uint balance){\n        return balances[tokenOwner];\n      }\n  \n function transfer(address to,uint tokens) public virtual override returns(bool success){\n      \n       require(balances[msg.sender]>=tokens,\"not enough balance available to tranfer\");\n       \n       balances[to] +=tokens;\n       balances[msg.sender] -= tokens;\n\n       emit Transfer(msg.sender, to, tokens);\n       return true;\n }\n\n\n\n // it allows the spender to withdraw and transfer from the\n // owners account multiple times upto the allowance\n // this function will also change the current allowance\n // func - will only be called by the account that was allowed to\n // transfer token from the holders accounts to his own or to another\n\n \n\n function tranferFrom(address from,address to,uint tokens) public virtual override returns (bool success){\n    // checking the allowance of curent user - who call this function\n    // is greater and equal to tokens\n    \n    require(allowed[from][msg.sender]>=tokens);\n    require(balances[from]>= tokens);\n    balances[from] -= tokens;\n    allowed[from][msg.sender] -=tokens;\n    balances[to] += tokens;\n    emit Transfer(from, to, tokens);\n    return true;\n  }\n   function allowance(address tokenOwner,address spender) public view override returns(uint remaining){\n    return allowed[tokenOwner][spender];\n   }\n\n\n// this functiokn will be called by token owner to set the allowance\n// which is the ammount that can be spent by the spender of this account\n\n  function approve(address spender,uint tokens) public  override returns (bool success){\n     require(balances[msg.sender] >= tokens);\n     require(tokens>0); \n     allowed[msg.sender][spender] = tokens;\n  \n     emit Approval(msg.sender, spender, tokens);\n     return true;\n  }\n\n\n\n     \n\n    \n\n\n}\n\ncontract CryptosICO is ERC20{\n    // admin - who deploys the contract\n    // -if any emergency or can change the deposit if it gets compromised\n\n     address public admin;\n\n     // investor will send eth to contract address\n     // the ether will automictaically transfer to deposit address\n     // and the cryptos will be added to the balance of investor\n     address payable public deposit;\n\n     // set token price - 1000crypt for 1 ether\n     uint tokenPrice = 0.001 ether;\n\n     // hardcap - maximum amount of ether that can be invested\n     uint public hardcap = 300 ether;\n\n     // raisedAmount - total amount of ether sent to the ICO\n     uint public raisedAmount;\n\n   // iCo will start in 20 seconds after the deployment\n     uint public saleStart = block.timestamp + 20;\n\n     uint public saleEnd = block.timestamp + 604800;\n\n    // set token to tranfer only after a time after the Ico\n    // ends so that the early investors can not dump the tokens on the market, \n    // causing the price to collapse\n    uint public tokenTradeStart = saleEnd + 604800; // transferable in a week after sale\n     \n    // maximmum and minimum investment\n    uint public maxInvestment = 5 ether;\n    uint public minInvestment = 0.1 ether;\n\n    enum State{beforeStart, running , afterEnd, halted}\n    \n    State public icoState;\n\n\n    constructor(address payable _deposit){\n        deposit = _deposit;\n        admin = msg.sender;\n        icoState = State.beforeStart;\n\n    }\n\n    modifier onlyAdmin(){\n        require(msg.sender==admin);\n        _;\n    }\n   // this function only called by admin to stop the ico at any moment\n\n    function halt() public onlyAdmin{\n        icoState= State.halted;\n\n    }\n\n\n    function resume() public onlyAdmin{\n          icoState= State.running;\n    }\n   \n\n\n   // function called only by admin to change the deposit address\n    \n    function changeDepositAddress(address payable newDeposit) public onlyAdmin{\n        deposit = newDeposit;\n    } \n   \n\n   // function to return the state of ICO\n   \n\n   function getCurrentState() public view returns(State){\n      if(icoState==State.halted){\n        return State.halted;\n      }else if(block.timestamp<saleStart){\n        return State.beforeStart;\n      }else if(block.timestamp>= saleStart && block.timestamp <= saleEnd){\n        return State.running;\n      }else{\n        return State.afterEnd;\n      }\n   }\n\n   event Invest(address investor,uint value, uint tokens);\n\n   // main function of the Ico - invest\n   // call- when somebody sends eth to the contract\n   // and recieves cryptos in return\n    \n    function invest() payable public returns(bool){\n         // first check that the ico is in the running state\n      icoState= getCurrentState();\n      require(icoState == State.running);\n      require(msg.value >= minInvestment && msg.value <= maxInvestment);\n       \n       // add the value into raised amount\n      raisedAmount += msg.value;\n      \n      require(raisedAmount <= hardcap);\n\n\n      // calculate the number of tokens user will get for the ether he has just sent\n     \n     uint tokens = msg.value/ tokenPrice;\n\n     // now these tokens will be added to invester balance \n     // and subtracted from the founder balance\n\n     balances[msg.sender] += tokens;\n     balances[founder] -= tokens;\n   \n\n   // now transfer to the deposit address the amount of wei sent to the contract\n   deposit.transfer(msg.value);\n\n    emit Invest(msg.sender,msg.value,tokens);\n    \n\n  return true;\n    }\n\n    // the contract will accept eth that has sent to its address\n    // if there is payable function called recieve\n\nreceive() payable external{\n    // this function will automatically call when someone sends\n    // ether to contact\n    invest();\n}\n\n\n// we  need to override two function - from ERC20 contract\n// transfer token and transferfrom\n\n// with these function it is placing restriction -\n// that if trade start then u can transfer tokens\nfunction transfer(address to,uint tokens) public override returns(bool success){\n   require(block.timestamp>tokenTradeStart);\n    super.transfer(to, tokens); // also can use ERC20.transfer(to,token)\n  \n     return true;\n }\n\n\nfunction tranferFrom(address from,address to,uint tokens) public override returns (bool success){\n     require(block.timestamp>tokenTradeStart);\n       ERC20.tranferFrom(from, to, tokens);\n            return true;\n  }\n\n\n\n\n\n\n}\n\n",
+  "source": "// SPDX-License-Identifier: GPL-3.0\npragma solidity >=0.7.0 <0.9.0;\ninterface ERC20Interface{\n    function totalSupply() external view returns(uint);\n    function balanceOf(address tokenOwner) external view returns (uint balance);\n    function transfer(address to,uint tokens) external returns(bool success);\n\n\n     function allowance(address tokenOwner,address spender) external view returns(uint remaining);\n     function approve(address spender,uint tokens) external returns (bool success);\n     function tranferFrom(address from,address to,uint tokens) external returns (bool success);\n\n\n    event Transfer(address indexed from, address indexed to, uint token);\n    event Approval(address indexed tokenOwner,address indexed spender,uint tokens);\n\n\n\n}\n\n\ncontract ERC20 is ERC20Interface{\n    \n    string public name = \"Cryptos\";\n    string public symbol= \"CRPT\";\n    uint public decimals = 0; //18\n    // total supply - represent the toral number of tokens\n    uint public override totalSupply; // a getter function will be created bcz the variable is public\n\n    address public founder;\n    // map to store each address and no of tokens with respect to it\n    mapping(address=>uint) public balances;\n   \n\n   constructor(){\n    totalSupply= 1000000;\n    founder = msg.sender;\n    balances[founder] = totalSupply;\n   }\n\n\n// first - this mapping includes the accounts approved tp withdraw from a \n// account together with the withdrawal sum allowed for wach of them\n\n// first mapping is the key - the address of the token holder\n// second map inside it - is representing the addresses that are allowed to transfer\n\n   mapping(address=>mapping(address=>uint)) public allowed;\n\n\n      function balanceOf(address tokenOwner) public view override returns (uint balance){\n        return balances[tokenOwner];\n      }\n  \n function transfer(address to,uint tokens) public virtual override returns(bool success){\n      \n       require(balances[msg.sender]>=tokens,\"not enough balance available to tranfer\");\n       \n       balances[to] +=tokens;\n       balances[msg.sender] -= tokens;\n\n       emit Transfer(msg.sender, to, tokens);\n       return true;\n }\n\n\n\n // it allows the spender to withdraw and transfer from the\n // owners account multiple times upto the allowance\n // this function will also change the current allowance\n // func - will only be called by the account that was allowed to\n // transfer token from the holders accounts to his own or to another\n\n \n\n function tranferFrom(address from,address to,uint tokens) public virtual override returns (bool success){\n    // checking the allowance of curent user - who call this function\n    // is greater and equal to tokens\n    \n    require(allowed[from][msg.sender]>=tokens);\n    require(balances[from]>= tokens);\n    balances[from] -= tokens;\n    allowed[from][msg.sender] -=tokens;\n    balances[to] += tokens;\n    emit Transfer(from, to, tokens);\n    return true;\n  }\n   function allowance(address tokenOwner,address spender) public view override returns(uint remaining){\n    return allowed[tokenOwner][spender];\n   }\n\n\n// this functiokn will be called by token owner to set the allowance\n// which is the ammount that can be spent by the spender of this account\n\n  function approve(address spender,uint tokens) public  override returns (bool success){\n     require(balances[msg.sender] >= tokens);\n     require(tokens>0); \n     allowed[msg.sender][spender] = tokens;\n  \n     emit Approval(msg.sender, spender, tokens);\n     return true;\n  }\n\n\n\n     \n\n    \n\n\n}\n\ncontract CryptosICO is ERC20{\n    // admin - who deploys the contract\n    // -if any emergency or can change the deposit if it gets compromised\n\n     address public admin;\n\n     // investor will send eth to contract address\n     // the ether will automictaically transfer to deposit address\n     // and the cryptos will be added to the balance of investor\n     address payable public deposit;\n\n     // set token price - 1000crypt for 1 ether\n     uint tokenPrice = 0.001 ether;\n\n     // hardcap - maximum amount of ether that can be invested\n     uint public hardcap = 300 ether;\n\n     // raisedAmount - total amount of ether sent to the ICO\n     uint public raisedAmount;\n\n   // iCo will start in 20 seconds after the deployment\n     uint public saleStart = block.timestamp + 20;\n\n     uint public saleEnd = block.timestamp + 604800;\n\n    // set token to tranfer only after a time after the Ico\n    // ends so that the early investors can not dump the tokens on the market, \n    // causing the price to collapse\n    uint public tokenTradeStart = saleEnd + 604800; // transferable in a week after sale\n     \n    // maximmum and minimum investment\n    uint public maxInvestment = 5 ether;\n    uint public minInvestment = 0.1 ether;\n\n    enum State{beforeStart, running , afterEnd, halted}\n    \n    State public icoState;\n\n\n    constructor(address payable _deposit){\n        deposit = _deposit;\n        admin = msg.sender;\n        icoState = State.beforeStart;\n\n    }\n\n    modifier onlyAdmin(){\n        require(msg.sender==admin);\n        _;\n    }\n   // this function only called by admin to stop the ico at any moment\n\n    function halt() public onlyAdmin{\n        icoState= State.halted;\n\n    }\n\n\n    function resume() public onlyAdmin{\n          icoState= State.running;\n    }\n   \n\n\n   // function called only by admin to change the deposit address\n    \n    function changeDepositAddress(address payable newDeposit) public onlyAdmin{\n        deposit = newDeposit;\n    } \n   \n\n   // function to return the state of ICO\n   \n\n   function getCurrentState() public view returns(State){\n      if(icoState==State.halted){\n        return State.halted;\n      }else if(block.timestamp<saleStart){\n        return State.beforeStart;\n      }else if(block.timestamp>= saleStart && block.timestamp <= saleEnd){\n        return State.running;\n      }else{\n        return State.afterEnd;\n      }\n   }\n\n   event Invest(address investor,uint value, uint tokens);\n\n   // main function of the Ico - invest\n   // call- when somebody sends eth to the contract\n   // and recieves cryptos in return\n    \n    function invest() payable public returns(bool){\n         // first check that the ico is in the running state\n      icoState= getCurrentState();\n      require(icoState == State.running);\n      require(msg.value >= minInvestment && msg.value <= maxInvestment);\n       \n       // add the value into raised amount\n      raisedAmount += msg.value;\n      \n      require(raisedAmount <= hardcap);\n\n\n      // calculate the number of tokens user will get for the ether he has just sent\n     \n     uint tokens = msg.value/ tokenPrice;\n\n     // now these tokens will be added to invester balance \n     // and subtracted from the founder balance\n\n     balances[msg.sender] += tokens;\n     balances[founder] -= tokens;\n   \n\n   // now transfer to the deposit address the amount of wei sent to the contract\n   deposit.transfer(msg.value);\n\n    emit Invest(msg.sender,msg.value,tokens);\n    \n\n  return true;\n    }\n\n    // the contract will accept eth that has sent to its address\n    // if there is payable function called recieve\n\nreceive() payable external{\n    // this function will automatically call when someone sends\n    // ether to contact\n    invest();\n}\n\n\n// we  need to override two function - from ERC20 contract\n// transfer token and transferfrom\n\n// with these function it is placing restriction -\n// that if trade start then u can transfer tokens\nfunction transfer(address to,uint tokens) public override returns(bool success){\n   require(block.timestamp>tokenTradeStart);\n    super.transfer(to, tokens); // also can use ERC20.transfer(to,token)\n  \n     return true;\n }\n\n\nfunction tranferFrom(address from,address to,uint tokens) public override returns (bool success){\n     require(block.timestamp>tokenTradeStart);\n       ERC20.tranferFrom(from, to, tokens);\n            return true;\n  }\n\n\n// burn the tokens that havent sold during Ico\n// generaly burning tokens leads to increase in price\n// burning means destroying them\n\n// function can be call by anyone - this sures that admin does not change his mind\n// and does not burn the token\n\n// token will be burn only after the Iso ends\nfunction burn() public returns(bool){\n    icoState = getCurrentState();\n    require(icoState== State.afterEnd);\n    balances[founder]=0;\n    return true;\n}\n\n\n\n}\n\n",
   "sourcePath": "/home/tuba/Work-Folder/BlockChain-Developement/ICO-Dapp-Application/src/contracts/ERC20.sol",
   "ast": {
     "absolutePath": "project:/src/contracts/ERC20.sol",
     "exportedSymbols": {
       "CryptosICO": [
-        596
+        622
       ],
       "ERC20": [
         292
@@ -208,7 +208,7 @@
         68
       ]
     },
-    "id": 597,
+    "id": 623,
     "license": "GPL-3.0",
     "nodeType": "SourceUnit",
     "nodes": [
@@ -1058,7 +1058,7 @@
             "src": "670:79:0"
           }
         ],
-        "scope": 597,
+        "scope": 623,
         "src": "68:686:0",
         "usedErrors": []
       },
@@ -3846,7 +3846,7 @@
             "visibility": "public"
           }
         ],
-        "scope": 597,
+        "scope": 623,
         "src": "757:2757:0",
         "usedErrors": []
       },
@@ -3873,9 +3873,9 @@
         "contractDependencies": [],
         "contractKind": "contract",
         "fullyImplemented": true,
-        "id": 596,
+        "id": 622,
         "linearizedBaseContracts": [
-          596,
+          622,
           292,
           68
         ],
@@ -3891,7 +3891,7 @@
             "name": "admin",
             "nameLocation": "3681:5:0",
             "nodeType": "VariableDeclaration",
-            "scope": 596,
+            "scope": 622,
             "src": "3666:20:0",
             "stateVariable": true,
             "storageLocation": "default",
@@ -3920,7 +3920,7 @@
             "name": "deposit",
             "nameLocation": "3900:7:0",
             "nodeType": "VariableDeclaration",
-            "scope": 596,
+            "scope": 622,
             "src": "3877:30:0",
             "stateVariable": true,
             "storageLocation": "default",
@@ -3948,7 +3948,7 @@
             "name": "tokenPrice",
             "nameLocation": "3968:10:0",
             "nodeType": "VariableDeclaration",
-            "scope": 596,
+            "scope": 622,
             "src": "3963:29:0",
             "stateVariable": true,
             "storageLocation": "default",
@@ -3993,7 +3993,7 @@
             "name": "hardcap",
             "nameLocation": "4075:7:0",
             "nodeType": "VariableDeclaration",
-            "scope": 596,
+            "scope": 622,
             "src": "4063:31:0",
             "stateVariable": true,
             "storageLocation": "default",
@@ -4038,7 +4038,7 @@
             "name": "raisedAmount",
             "nameLocation": "4175:12:0",
             "nodeType": "VariableDeclaration",
-            "scope": 596,
+            "scope": 622,
             "src": "4163:24:0",
             "stateVariable": true,
             "storageLocation": "default",
@@ -4066,7 +4066,7 @@
             "name": "saleStart",
             "nameLocation": "4263:9:0",
             "nodeType": "VariableDeclaration",
-            "scope": 596,
+            "scope": 622,
             "src": "4251:44:0",
             "stateVariable": true,
             "storageLocation": "default",
@@ -4155,7 +4155,7 @@
             "name": "saleEnd",
             "nameLocation": "4315:7:0",
             "nodeType": "VariableDeclaration",
-            "scope": 596,
+            "scope": 622,
             "src": "4303:46:0",
             "stateVariable": true,
             "storageLocation": "default",
@@ -4244,7 +4244,7 @@
             "name": "tokenTradeStart",
             "nameLocation": "4545:15:0",
             "nodeType": "VariableDeclaration",
-            "scope": 596,
+            "scope": 622,
             "src": "4533:46:0",
             "stateVariable": true,
             "storageLocation": "default",
@@ -4318,7 +4318,7 @@
             "name": "maxInvestment",
             "nameLocation": "4679:13:0",
             "nodeType": "VariableDeclaration",
-            "scope": 596,
+            "scope": 622,
             "src": "4667:35:0",
             "stateVariable": true,
             "storageLocation": "default",
@@ -4363,7 +4363,7 @@
             "name": "minInvestment",
             "nameLocation": "4720:13:0",
             "nodeType": "VariableDeclaration",
-            "scope": 596,
+            "scope": 622,
             "src": "4708:37:0",
             "stateVariable": true,
             "storageLocation": "default",
@@ -4446,7 +4446,7 @@
             "name": "icoState",
             "nameLocation": "4826:8:0",
             "nodeType": "VariableDeclaration",
-            "scope": 596,
+            "scope": 622,
             "src": "4813:21:0",
             "stateVariable": true,
             "storageLocation": "default",
@@ -4692,7 +4692,7 @@
               "parameters": [],
               "src": "4879:0:0"
             },
-            "scope": 596,
+            "scope": 622,
             "src": "4842:139:0",
             "stateMutability": "nonpayable",
             "virtual": false,
@@ -4931,7 +4931,7 @@
               "parameters": [],
               "src": "5170:0:0"
             },
-            "scope": 596,
+            "scope": 622,
             "src": "5138:72:0",
             "stateMutability": "nonpayable",
             "virtual": false,
@@ -5041,7 +5041,7 @@
               "parameters": [],
               "src": "5251:0:0"
             },
-            "scope": 596,
+            "scope": 622,
             "src": "5217:76:0",
             "stateMutability": "nonpayable",
             "virtual": false,
@@ -5164,7 +5164,7 @@
               "parameters": [],
               "src": "5449:0:0"
             },
-            "scope": 596,
+            "scope": 622,
             "src": "5375:111:0",
             "stateMutability": "nonpayable",
             "virtual": false,
@@ -5662,7 +5662,7 @@
               ],
               "src": "5589:7:0"
             },
-            "scope": 596,
+            "scope": 622,
             "src": "5543:356:0",
             "stateMutability": "view",
             "virtual": false,
@@ -6779,7 +6779,7 @@
               ],
               "src": "6139:6:0"
             },
-            "scope": 596,
+            "scope": 622,
             "src": "6099:897:0",
             "stateMutability": "payable",
             "virtual": false,
@@ -6848,7 +6848,7 @@
               "parameters": [],
               "src": "7141:0:0"
             },
-            "scope": 596,
+            "scope": 622,
             "src": "7115:131:0",
             "stateMutability": "payable",
             "virtual": false,
@@ -7012,7 +7012,7 @@
                         "referencedDeclaration": 4294967271,
                         "src": "7575:5:0",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_type$_t_super$_CryptosICO_$596_$",
+                          "typeIdentifier": "t_type$_t_super$_CryptosICO_$622_$",
                           "typeString": "type(contract super CryptosICO)"
                         }
                       },
@@ -7185,7 +7185,7 @@
               ],
               "src": "7510:14:0"
             },
-            "scope": 596,
+            "scope": 622,
             "src": "7445:222:0",
             "stateMutability": "nonpayable",
             "virtual": false,
@@ -7566,19 +7566,340 @@
               ],
               "src": "7752:14:0"
             },
-            "scope": 596,
+            "scope": 622,
             "src": "7670:217:0",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 620,
+              "nodeType": "Block",
+              "src": "8222:119:0",
+              "statements": [
+                {
+                  "expression": {
+                    "id": 603,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "id": 600,
+                      "name": "icoState",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 337,
+                      "src": "8228:8:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_enum$_State_$334",
+                        "typeString": "enum CryptosICO.State"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "arguments": [],
+                      "expression": {
+                        "argumentTypes": [],
+                        "id": 601,
+                        "name": "getCurrentState",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 445,
+                        "src": "8239:15:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_function_internal_view$__$returns$_t_enum$_State_$334_$",
+                          "typeString": "function () view returns (enum CryptosICO.State)"
+                        }
+                      },
+                      "id": 602,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "kind": "functionCall",
+                      "lValueRequested": false,
+                      "nameLocations": [],
+                      "names": [],
+                      "nodeType": "FunctionCall",
+                      "src": "8239:17:0",
+                      "tryCall": false,
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_enum$_State_$334",
+                        "typeString": "enum CryptosICO.State"
+                      }
+                    },
+                    "src": "8228:28:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_enum$_State_$334",
+                      "typeString": "enum CryptosICO.State"
+                    }
+                  },
+                  "id": 604,
+                  "nodeType": "ExpressionStatement",
+                  "src": "8228:28:0"
+                },
+                {
+                  "expression": {
+                    "arguments": [
+                      {
+                        "commonType": {
+                          "typeIdentifier": "t_enum$_State_$334",
+                          "typeString": "enum CryptosICO.State"
+                        },
+                        "id": 609,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "lValueRequested": false,
+                        "leftExpression": {
+                          "id": 606,
+                          "name": "icoState",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 337,
+                          "src": "8270:8:0",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_enum$_State_$334",
+                            "typeString": "enum CryptosICO.State"
+                          }
+                        },
+                        "nodeType": "BinaryOperation",
+                        "operator": "==",
+                        "rightExpression": {
+                          "expression": {
+                            "id": 607,
+                            "name": "State",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 334,
+                            "src": "8281:5:0",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_type$_t_enum$_State_$334_$",
+                              "typeString": "type(enum CryptosICO.State)"
+                            }
+                          },
+                          "id": 608,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": true,
+                          "lValueRequested": false,
+                          "memberLocation": "8287:8:0",
+                          "memberName": "afterEnd",
+                          "nodeType": "MemberAccess",
+                          "referencedDeclaration": 332,
+                          "src": "8281:14:0",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_enum$_State_$334",
+                            "typeString": "enum CryptosICO.State"
+                          }
+                        },
+                        "src": "8270:25:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_bool",
+                          "typeString": "bool"
+                        }
+                      ],
+                      "id": 605,
+                      "name": "require",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [
+                        4294967278,
+                        4294967278
+                      ],
+                      "referencedDeclaration": 4294967278,
+                      "src": "8262:7:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
+                        "typeString": "function (bool) pure"
+                      }
+                    },
+                    "id": 610,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "nameLocations": [],
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "8262:34:0",
+                    "tryCall": false,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$__$",
+                      "typeString": "tuple()"
+                    }
+                  },
+                  "id": 611,
+                  "nodeType": "ExpressionStatement",
+                  "src": "8262:34:0"
+                },
+                {
+                  "expression": {
+                    "id": 616,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "baseExpression": {
+                        "id": 612,
+                        "name": "balances",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 88,
+                        "src": "8302:8:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_mapping$_t_address_$_t_uint256_$",
+                          "typeString": "mapping(address => uint256)"
+                        }
+                      },
+                      "id": 614,
+                      "indexExpression": {
+                        "id": 613,
+                        "name": "founder",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 84,
+                        "src": "8311:7:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        }
+                      },
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": true,
+                      "nodeType": "IndexAccess",
+                      "src": "8302:17:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "hexValue": "30",
+                      "id": 615,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "kind": "number",
+                      "lValueRequested": false,
+                      "nodeType": "Literal",
+                      "src": "8320:1:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_rational_0_by_1",
+                        "typeString": "int_const 0"
+                      },
+                      "value": "0"
+                    },
+                    "src": "8302:19:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "id": 617,
+                  "nodeType": "ExpressionStatement",
+                  "src": "8302:19:0"
+                },
+                {
+                  "expression": {
+                    "hexValue": "74727565",
+                    "id": 618,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": true,
+                    "kind": "bool",
+                    "lValueRequested": false,
+                    "nodeType": "Literal",
+                    "src": "8334:4:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    },
+                    "value": "true"
+                  },
+                  "functionReturnParameters": 599,
+                  "id": 619,
+                  "nodeType": "Return",
+                  "src": "8327:11:0"
+                }
+              ]
+            },
+            "functionSelector": "44df8e70",
+            "id": 621,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "burn",
+            "nameLocation": "8195:4:0",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 596,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "8199:2:0"
+            },
+            "returnParameters": {
+              "id": 599,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 598,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 621,
+                  "src": "8217:4:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  },
+                  "typeName": {
+                    "id": 597,
+                    "name": "bool",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "8217:4:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "8216:6:0"
+            },
+            "scope": 622,
+            "src": "8186:155:0",
             "stateMutability": "nonpayable",
             "virtual": false,
             "visibility": "public"
           }
         ],
-        "scope": 597,
-        "src": "3516:4379:0",
+        "scope": 623,
+        "src": "3516:4830:0",
         "usedErrors": []
       }
     ],
-    "src": "36:7861:0"
+    "src": "36:8312:0"
   },
   "compiler": {
     "name": "solc",
@@ -7586,7 +7907,7 @@
   },
   "networks": {},
   "schemaVersion": "3.4.9",
-  "updatedAt": "2022-09-07T18:01:09.904Z",
+  "updatedAt": "2022-09-07T18:59:47.978Z",
   "devdoc": {
     "kind": "dev",
     "methods": {},

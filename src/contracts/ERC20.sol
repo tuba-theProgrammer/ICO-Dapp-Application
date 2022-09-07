@@ -265,7 +265,20 @@ function tranferFrom(address from,address to,uint tokens) public override return
   }
 
 
+// burn the tokens that havent sold during Ico
+// generaly burning tokens leads to increase in price
+// burning means destroying them
 
+// function can be call by anyone - this sures that admin does not change his mind
+// and does not burn the token
+
+// token will be burn only after the Iso ends
+function burn() public returns(bool){
+    icoState = getCurrentState();
+    require(icoState== State.afterEnd);
+    balances[founder]=0;
+    return true;
+}
 
 
 
