@@ -52,7 +52,7 @@ contract ERC20 is ERC20Interface{
         return balances[tokenOwner];
       }
   
- function transfer(address to,uint tokens) public override returns(bool success){
+ function transfer(address to,uint tokens) public virtual override returns(bool success){
       
        require(balances[msg.sender]>=tokens,"not enough balance available to tranfer");
        
@@ -73,7 +73,7 @@ contract ERC20 is ERC20Interface{
 
  
 
- function tranferFrom(address from,address to,uint tokens) public override returns (bool success){
+ function tranferFrom(address from,address to,uint tokens) public virtual override returns (bool success){
     // checking the allowance of curent user - who call this function
     // is greater and equal to tokens
     
@@ -93,7 +93,7 @@ contract ERC20 is ERC20Interface{
 // this functiokn will be called by token owner to set the allowance
 // which is the ammount that can be spent by the spender of this account
 
-  function approve(address spender,uint tokens) public override returns (bool success){
+  function approve(address spender,uint tokens) public  override returns (bool success){
      require(balances[msg.sender] >= tokens);
      require(tokens>0); 
      allowed[msg.sender][spender] = tokens;
@@ -101,6 +101,9 @@ contract ERC20 is ERC20Interface{
      emit Approval(msg.sender, spender, tokens);
      return true;
   }
+
+
+
      
 
     
@@ -240,6 +243,28 @@ receive() payable external{
     // ether to contact
     invest();
 }
+
+
+// we  need to override two function - from ERC20 contract
+// transfer token and transferfrom
+
+// with these function it is placing restriction -
+// that if trade start then u can transfer tokens
+function transfer(address to,uint tokens) public override returns(bool success){
+   require(block.timestamp>tokenTradeStart);
+    super.transfer(to, tokens); // also can use ERC20.transfer(to,token)
+  
+     return true;
+ }
+
+
+function tranferFrom(address from,address to,uint tokens) public override returns (bool success){
+     require(block.timestamp>tokenTradeStart);
+       ERC20.tranferFrom(from, to, tokens);
+            return true;
+  }
+
+
 
 
 
