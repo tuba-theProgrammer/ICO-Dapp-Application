@@ -136,7 +136,63 @@ contract CryptosICO is ERC20{
     // set token to tranfer only after a time after the Ico
     // ends so that the early investors can not dump the tokens on the market, 
     // causing the price to collapse
+    uint public tokenTradeStart = saleEnd + 604800; // transferable in a week after sale
+     
+    // maximmum and minimum investment
+    uint public maxInvestment = 5 ether;
+    uint public minInvestment = 0.1 ether;
 
+    enum State{beforeStart, running , afterEnd, halted}
+    
+    State public icoState;
+
+
+    constructor(address payable _deposit){
+        deposit = _deposit;
+        admin = msg.sender;
+        icoState = State.beforeStart;
+
+    }
+
+    modifier onlyAdmin(){
+        require(msg.sender==admin);
+        _;
+    }
+   // this function only called by admin to stop the ico at any moment
+
+    function halt() public onlyAdmin{
+        icoState= State.halted;
+
+    }
+
+
+    function resume() public onlyAdmin{
+          icoState= State.running;
+    }
+   
+
+
+   // function called only by admin to change the deposit address
+    
+    function changeDepositAddress(address payable newDeposit) public onlyAdmin{
+        deposit = newDeposit;
+    } 
+   
+
+   // function to return the state of ICO
+   
+
+   function getCurrentState() public view returns(State){
+      if(icoState==State.halted){
+        return State.halted;
+      }else if(block.timestamp<saleStart){
+        return State.beforeStart;
+      }else if(block.timestamp>= saleStart && block.timestamp <= saleEnd){
+        return State.running;
+      }else{
+        return State.afterEnd;
+      }
+   }
 
 }
 
