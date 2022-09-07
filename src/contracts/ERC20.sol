@@ -107,3 +107,36 @@ contract ERC20 is ERC20Interface{
 
 
 }
+
+contract CryptosICO is ERC20{
+    // admin - who deploys the contract
+    // -if any emergency or can change the deposit if it gets compromised
+
+     address public admin;
+
+     // investor will send eth to contract address
+     // the ether will automictaically transfer to deposit address
+     // and the cryptos will be added to the balance of investor
+     address payable public deposit;
+
+     // set token price - 1000crypt for 1 ether
+     uint tokenPrice = 0.001 ether;
+
+     // hardcap - maximum amount of ether that can be invested
+     uint public hardcap = 300 ether;
+
+     // raisedAmount - total amount of ether sent to the ICO
+     uint public raisedAmount;
+
+   // iCo will start in 20 seconds after the deployment
+     uint public saleStart = block.timestamp + 20;
+
+     uint public saleEnd = block.timestamp + 604800;
+
+    // set token to tranfer only after a time after the Ico
+    // ends so that the early investors can not dump the tokens on the market, 
+    // causing the price to collapse
+
+
+}
+
